@@ -1,0 +1,14 @@
+<div class="container">
+    <h1 class="searchedItemHeader">Searched Item</h1>
+    <div class="container">
+      <div class="row searchedItem">
+      <p><strong>Search: </strong> {{ search.heading }}</p>
+      <p><strong>Search Description: </strong> {{ search.description }}</p>
+      <a ng-href="{{ search.link }}" target="_blank">Wikipedia Link</a>     
+      <button ng-click="deleteSearchItem()" class="btn btn-success btn-lg pull-right cbtn">Delete</button> 
+    </div> <!-- row end-->
+    </div><!-- Container End -->
+
+
+
+    

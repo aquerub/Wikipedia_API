@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="wikipediaApp">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Services - Solution Code</title>
+
+  <!-- Google Font - Open Sans -->
+  <link async href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+  <!-- Bootstrap CDN 3.3.7 -->
+  <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="./css/bootstrap-glyphicons.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Angular CDN 1.6.5 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+
+  <!-- Angular UI Router CDN 0.4.2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+</head>
+
+<body>
+  <div id="container">
+  <div class="" id="main">
+    <!-- <div class="col-md-12"> -->
+    <div class="navbar navbar-fixed-top headerBackground">
+      <div class="container">
+        <a class="navbar-brand logo" href="/">
+          <img src="../images/logo.png" alt="Your logo">
+        </a>
+        <div class="navbar-responsive-collapse">
+          <ul class="nav navbar-nav">
+            <li class "col-md-4">
+              <a href="#">Home</a>
+            </li>
+            <li class "col-md-4">
+              <a ui-sref="searches">Search List</a>
+            </li>
+
+          </ul>
+        </div>
+        <!-- end collapse-->
+      </div>
+      <!--end container-->
+    </div>
+    <!-- end navbar-->
+    <!-- </div>end navbar -->
+  </div>
+  <!-- end of conatiner-->
+
+
+  <div ui-view class="view"></div>
+  <!--end of ui view-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h6>Copyright &copy; 2017 Alan Querubin </h6>
+          <ul class="unstyled">
+            <li>
+              <a href="https://www.linkedin.com/in/alan-querubin/" target="_blank">LinkedIn Profile</a>
+            </li>
+          </ul>
+        </div><!-- end col-sm-2"-->
+        <div class="col-sm-4" >
+          <h6>About Wiki-FRESH-SEARCHES</h6>
+          <p id="aboutWikipediaContent">This application allows you to keep track of a list of your search history when you use Wikipedia. The search list
+            provides the time when you searched, a short description and the wikipedia link. </p>
+        </div><!--end col-sm-4 -->
+
+        <div class="col-sm-4">
+          <h6>Navigation</h6>
+          <ul class="unstyled">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a ui-sref="searches">Search List</a>
+            </li>
+          </ul>
+        </div><!-- end col-sm-4"-->
+      </div> <!-- end col-sm-4"-->
+    </div><!-- end row-->
+    </div><!--end container-->
+  </footer>
+</div><!--end 1st container-->
+</body>
+
+
+<!-- Module -->
+<script type="text/javascript" src="./app.js"></script>
+
+<!-- Services -->
+<script type="text/javascript" src="./services/searchService.js"></script>
+
+
+<!-- Controllers -->
+<script type="text/javascript" src="./controllers/searchController.js"></script>
+<script type="text/javascript" src="./controllers/searchByHistoryController.js"></script>
+
+
+</html>
